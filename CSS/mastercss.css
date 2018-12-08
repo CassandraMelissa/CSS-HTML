@@ -1,0 +1,97 @@
+	/* image will be on the left side */
+	.background_image {
+		float:left;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		z-index: 1;
+	}
+	/* make header background color lightgrey */
+	.h {
+		background-color: lightgrey;
+		z-index: 0;
+	}
+	/* place image infront of background image */
+	.foreground_image {
+		float:left;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		z-index: 2;
+	}
+	h2.clear {
+		clear: left;
+	}
+	.intro { 
+		position: absolute;
+		top: 0;
+		left: 9%;
+		z-index: 2;
+	}
+	/* positions search bar and buttons on the top-left corner */
+	.search {
+		 position: absolute;
+		top: 0;
+		left: 55%;
+	}
+	/* With menu expanding/collapsing, the rest of the page content should not move
+down and move back up */
+	nav ul { list-style: none;
+		padding: 0;
+		margin: 0px;
+		background-color: white;
+		/* display none will make 
+		it a drop down */
+		display: none;
+		color: black;
+	}
+	nav {
+		border: solid 2px black;
+		text-align: center;
+		width: 10em;
+		background-color: white;
+		color: black;
+		position: absolute;
+		top: 130px;
+		right: 20px;
+	}
+	nav ul li { 
+		border-top: 2px solid black;
+
+	}
+	/* highlight background when hovering over menu item */
+	nav ul li :hover {
+		background-color: powderblue;
+	}
+	nav:hover ul { 
+		display: block;
+	}
+	/* positions and controls background color of footer */
+	.f {
+		position: relative;
+		background-color: lightgrey;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 1em;
+		margin-top: 1%;
+	}
+	h5.clear {
+		clear: left;
+		padding-top: 1em;
+	}
+	.end { position: relative;
+		right: -15px;
+	}
+	/* positions footer image on the left side */
+	.footer_image {
+		float: left;
+		position: relative;
+		padding-left: 1em;
+	}
+	/* positions contact info an the right */
+	.contact {
+		position: absolute;
+		bottom: 40px;
+		right: 20px;
+	}

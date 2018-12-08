@@ -1,0 +1,25 @@
+<style type = "text/css">
+	{}
+	/* will highlight specified atributes in the html file when hovered over */
+	.highlight *:hover{
+		background-color: beige;
+	}
+	.ps {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	/* will be able to scroll */
+	.one {
+		padding: 2em;
+		height: 150px;
+		max-width: 30%;
+		overflow: auto;
+	}
+	.two {
+		max-width: 30%;
+		height: 150px;
+		overflow: hidden;
+	}
+</style>

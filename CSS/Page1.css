@@ -1,0 +1,41 @@
+	body {
+		background-image: url(pinkmoon.jpg);
+		background-repeat: repeat-y;
+	}
+	/* a signing form to for people to sign up for*/
+	div.sign {
+		text-align: center;
+	}
+	/* form is in div, aligning everthing to center to make it 
+		proper.
+	*/
+	div.form{
+		display: block;
+		text-align: center;
+		padding-bottom: 1em;
+	}
+
+	/* in here we are styling the signing form in order to make it neat and attractive. */
+	#sform {
+		border-style: groove;
+		border-color: silver;
+		border-width: 5px;
+		border-spacing: 30px;	
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50%;
+		padding: 16px;
+		text-align: center;
+		display: inline-block;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 500px 700px;
+	}
+	/* span beccause span is inline and div is block */
+	span.wrapper {
+		font-family: "Comic Sans MS", "Comic Sans", times;
+		color: red; 
+	}
+
