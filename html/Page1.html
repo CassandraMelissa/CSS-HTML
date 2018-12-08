@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Sign Up</title>
+		<link rel="stylesheet" type="text/css" href="mastercss.css">
+		<link rel="stylesheet" type="text/css" href="Page1.css">
+	</head>
+
+	<body>
+		<header>
+			<!-- will control color of header in master class -->
+			<div class = "h">
+				<img class ="cass" src="cass.jpg" height= "100" width="100" alt="Cass" class="background_image"> 
+				 <img src="at_sym.jpg" height= "100" width="100" alt="@ symbol" class="foreground_image"> 
+				 <!--  controlled in master class to be plced next to image -->
+				 <div class="intro">
+				 	<p>  Cassandra&Terry Inc. <br> Cassandra Chavez-Suarez, CS Student <br> cassandra.chavezsuarez.305@my.csun.edu </p>
+				 </div>
+				 <h2 class="clear"> Welcome to our website! </h2>
+				 <div id="search" class="search">
+				 	<!-- parameters will be saved -->
+				 	<form method="get" action="http://www.google.com/search">
+				 		<p>
+							<label>Search 
+							<input type="text" value="" name ="search" size="30" placeholder="Search">
+							</label>
+							<label>Search the web <input type="radio" name="websearch"></label>
+							<label>Search within the website <input type="radio" name="websearch"></label>
+						</p>
+						<p>
+							<input type="submit" value="Submit">
+						</p>
+					</form>
+			 	</div>
+			 <div>
+			 	<nav>
+			   		Menu
+					<ul>
+						<!-- links are made selectable -->
+						<li><a href="./Page1.html">Sign Up</a></li>
+						<li><a href="./Page2.html">Privacy Agreement</a></li>
+						<li><a href="./Page3.html">About us</a></li>
+					</ul>
+				</nav>
+			 </div>	
+			</div>		
+		</header>
+		<article>
+			<main>
+				<div class="sign">
+					<h1>Sign up today to recieve updates!</h2>
+				</div>
+				<div class="form">
+					<!-- post method will save user input -->
+					<form id="sform" method="post" action="http://www.deitel.com">
+						<!-- every field must be answered required needs to be used -->
+						<p>
+							<label for="firstname">First Name: </label><input id="firstname" type="text" size="15" maxlength="20" value placeholder="First Name" name="firstname"   autofocus autocomplete="on" required>
+						</p>
+						<p>
+							<label>Last Name: <input type="text" size="20" maxlength="30" name="lastname" value placeholder="Last Name" autocomplete="on" required></label>
+						</p>	
+						<p>
+							<label>Email: </label><input type="email" name="email" placeholder="sample@sample.com" autocomplete="off" required>
+						</p>
+						<p>
+							<label>Password: </label><input type="password" required name="pass">
+						</p>
+						<p>
+							<label>Re-Enter Password: </label><input type="password" name="re-pass" required>
+						</p>
+						<p>
+							<label>Birth Date: </label><input type="date" name="birth" value="1998-01-01" required>
+						</p>
+						<p>
+							<label>Select your major:
+							</label>
+							<input type="text" name="major" list="major" required>
+							<datalist id="major">
+								<option value="Civil Engineering"></option>
+								<option value="Computer Engineering"></option>
+								<option value="Computer Information Technology"></option>
+								<option value="Computer Science"></option>
+								<option value="Electrical Engineering"></option>
+								<option value="Engineering Management"></option>
+								<option value="Manufacturing Systems Engineering"></option>
+								<option value="Mechanical Engineering"></option>
+							</dataist>
+						</p>
+						<span class="wrapper">
+							<p>
+								<label>Your favorite color: </label>
+								<input type="color" name="colorPK" required>
+							</p>
+					</span>
+						<p>
+							<label>Number of years in college: </label>
+							<select name="yearsSelect">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</p>
+						<p>
+							<label>Phone Number: </label>
+							<input type="tel" name="tel" placeholder="###-###-####" pattern="\d{3}-\d{3}-\d{4}" required autocomplete="off">
+						</p>
+						<p>
+							<!--  validation not needed -->
+							<label>Link to your homepage: </label>
+							<input type"url" id="myURL"autocomplete="off">
+						</p>
+						<p>
+							<label>Years of Experience: </label>
+							<label><input type="radio" name="expChk" value="0-5">0-5</label>
+							<label><input type="radio" name="expChk" value="5-10">5-10</label>
+							<label><input type="radio" name="expChk" value="10-15">10-15</label>
+							<label><input type="radio" name="expChk" value="20+">20+</label>
+						</p>
+						<p>
+							<label>Skill level in </label>
+							<label>< 0<input type="range" min="0" max="10" value="5" name="range" required>10 ><label>
+						</p>
+						<p>
+							<label>Contact Preferences: </label>
+						</p>
+						<p>
+							<label><input type="radio" name="productOffers" value="re-email">I would like to receive emails about new products and offers</label>
+						</p>
+						<p>
+							<label><input type="radio" required name="acctMember" value="re-mail">I would like to receive emails about my account and membership</label>
+						</p>
+						<p>
+							<label><input type="radio" required name="email" value="AM">I would like to receive mail</label>
+						</p>
+						<p>
+						<input type="submit" required value="Sign up">
+						<input type="reset" required value="Reset">
+						</p>
+					</form>
+				</div>
+			</main>
+		</article>
+		<footer>
+			<!-- div class f will control the placement of the footer -->
+			<div class="f">
+				<img src="terr.jpg" height= "100" width="100" alt="Obama" class="footer_image">  
+				 <div class="end">
+					<p>  Cassandra&Terry Inc. <br> Terry Cortez, CS Student <br> wasupmeng@aol.com </p>
+				 	<a href="./Page2.html" ><h5 class="clear"> © Cassandra&Terry INC. ALL RIGHTS RESERVED </h5></a>
+				 </div>
+				 <div class="contact">
+				 	<address>
+				 		<p>Contact us at:<a href="
+					mailto:cassandra.chavezsuarez.305@my.csun.edu"> cassandra.chavezsuarez.305@my.csun.edu</a><br>1800 Nordhoff Street California<br>Northridge, CA, 91325<br>
+				 		<a href="tel:+18003456789">1-800-345-6789</a></p>
+				 	</address>
+				 </div>
+			</div>
+		</footer>
+	</body>
+</html>
